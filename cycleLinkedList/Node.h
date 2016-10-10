@@ -6,6 +6,8 @@ public:
   const int getNumber() const;
   Node* getNext() const;
   void print(Node *ptr);
+  bool checkForCycle(Node *ptr);
+  void setNext(Node *ptr);
 private:
   int num;
   Node *next;
