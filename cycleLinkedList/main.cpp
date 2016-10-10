@@ -9,10 +9,11 @@ int main(){
     tPtr = tPtr->getNext();
     std::cout<<i<<std::endl;
   }
-  t2Ptr->setNext(&root); 
-  //tPtr->setNext(&root);
+  //t2Ptr->setNext(&root); 
+  tPtr->setNext(&root);
   //std::cout<<"t2Ptr:"<<t2Ptr->getNumber()<<std::endl;
-  std::cout<<"Result:"<<root.checkForCycle(&root);
+  bool answer = root.checkForCycle(&root);
+  std::cout<<"Result:";
   //root.print(&root);
   
   return 0;

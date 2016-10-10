@@ -17,26 +17,33 @@ bool Node:: checkForCycle(Node * ptr){
   std::cout<<"checkForCycleNode\n";
   Node* ptr1 = ptr;
   Node* ptr2 = (ptr->getNext())->getNext();
+  bool answer = false;
   while(ptr1 != NULL || ptr2 != NULL){
     if(ptr1 == ptr2){
-      return true;
+      //return true;
+      std::cout<<"cycle detected!"<<std::endl;
+      answer = true;
+      //return true;
+      break; //Break causes segmentation fault, haven't figure out why yet. 
     }
     ptr1 = ptr1->getNext();
-    std::cout<<ptr1->getNumber()<<std::endl;
+    std::cout<<ptr2->getNumber()<<std::endl;
     if(ptr2->getNext() != NULL){
       ptr2 = ptr2->getNext();
       if(ptr2->getNext() != NULL){
-         //ptr2 = ptr2->getNext();
+         ptr2 = ptr2->getNext();
       }
       else{
-        return false;
+        //return false;
+        break;
       }
     }
     else{
-      return false;
+      //return false;
+      break;
     }
   }
-  return false;
+  return answer;
 }
 void Node:: setNext(Node * ptr){
   //std::cout<<"Helllo\n";

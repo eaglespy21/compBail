@@ -1,3 +1,8 @@
 Something is wrong with the new inside the for loop. Everytime there is a new, there should be a delete and that's a rule. But not getting any valgrind errors which makes it even weirder because I don't know what's happening. The structure of the program is also not right. 
 
-Positives - Make file works, linked list insertion works in some capacity. 
+Positives - Make file works, linked list insertion works in some capacity.
+
+Cycle detection algorithm works 
+Complexity - O(n)
+
+But segmentation fault because of break from while loop, no idea why. Need to figure it out.   
