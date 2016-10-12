@@ -1,0 +1,2 @@
+Yield is like a return but it is used for generators and not iterables. 
+It calculates the ith value and forgets about it. Each iteration is run just one. 
