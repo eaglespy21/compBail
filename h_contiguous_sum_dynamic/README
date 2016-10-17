@@ -1,4 +1,0 @@
-Using arrays, initialize double dimensional arrays. 
-Successfull implementation of knapsack problem. But this is not the solution to this particular problem. 
-This problem required continguous sum. Knapsack gives us non - contiguous sum which is the same as adding all the positive elements in this problem, LOL. 
-

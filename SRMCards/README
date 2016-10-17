@@ -1,2 +1,0 @@
-Enumerate functions, skip first last element in for loop using iterables. Sorting. Other than pretty straighforward. But haven't got the solution yet. Must be something silly. 
-Figured out what the problem with the fib question is probably. That one particular test case must be crashing because there is a space at the end of input. 
