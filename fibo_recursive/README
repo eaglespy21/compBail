@@ -1,0 +1,5 @@
+Yield is like a return but it is used for generators and not iterables. 
+It calculates the ith value and forgets about it. Each iteration is run just one. 
+The iterative solution is actually the dynamic programming solution, as you build it bottom up. 
+The recursive solution is top - down and unless memorized recursion is used its complexity is O(2^n) 
+For dynamic solution and memorized recursion its O(n), space is O(n) or O(2) if you only store two values

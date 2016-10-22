@@ -1,0 +1,3 @@
+In C++ unordered the keys (if they don't exist) automatically get intialized I think( atleast they don't throw an error). Need to analyze that.
+
+In python the key needs to exist otherwise the interpreter throws an error.
