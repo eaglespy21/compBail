@@ -1,0 +1,10 @@
+Infix to postfix
+Mistakes -
+Implementation of stack, the stack is a char stack not an int stack 
+which means the functions need to return characters not integers.
+Testcase - ((A-(B+C))*D)/(E-F)
+Result - ABC+-D*EF-/
+Evaluation of postfix
+Make sure parameters and arguments are of the same type
+Test case - 623+-382/+*2+3+
+Result - 12.0000 
