@@ -1,0 +1,4 @@
+Ascending priority queue implemented 
+It's better to use linked list instead of arrays because the average time of entering an element into the priority queue does include shifting all the elements back. 
+The removal of a node is O(1) time and entering a node is O(n/2) 
+

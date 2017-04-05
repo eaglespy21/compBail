@@ -1,4 +1,4 @@
-OBJS = linkedList.o queue.o main.o
+OBJS = linkedList.o priorityQueue.o main.o
 CC = g++
 DEBUG = -g
 CFLAGS = -Wall -c $(DEBUG)
@@ -8,9 +8,9 @@ zorion : $(OBJS)
 	$(CC) $(LFLAGS) $(OBJS) -o zorion
 linkedList.o : linkedList.h linkedList.cpp
 	$(CC) $(CFLAGS) linkedList.cpp
-queue.o : queue.h linkedList.h queue.cpp
-	$(CC) $(CFLAGS) queue.cpp
-main.o : main.cpp linkedList.h queue.h
+priorityQueue.o : priorityQueue.h priorityQueue.cpp
+	$(CC) $(CFLAGS) priorityQueue.cpp
+main.o : main.cpp linkedList.h priorityQueue.h
 	$(CC) $(CFLAGS) main.cpp
 clean: 
-	\rm *.o *~zorion
+	\rm *.o 

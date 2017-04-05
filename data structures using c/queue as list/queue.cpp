@@ -1,14 +1,9 @@
 #include<stdio.h>
+#include<stdlib.h>
+#ifndef __linkedList_h_ 
+  #define __linkedList_h_
+#endif
 #include "queue.h"
-//#include<stdlib.h>
-//#include "linkedList.h"
-//#define TRUE 1
-//#define FALSE 0
-/*
-struct queue{
-  struct node *front, *rear;
-}; 
-struct queue q;
 
 int empty(struct queue *pq){
   return((pq->front == NULL) ? TRUE:FALSE);
@@ -44,28 +39,4 @@ int remove(struct queue *pq){
   freeNode(p);
   return x;
 }
-*/
-struct queue q;
-int main(){
-  struct queue* ptoq;
-  struct node* t;
-  ptoq = &q;
-  insert(ptoq, 1);
-  insert(ptoq, 2);
-  insert(ptoq, 3);
-  t = ptoq->front;
-  while(t != NULL){
-    printf("%d\n", t->info);
-    t = t->next;
-  }
-  remove(ptoq);
-  remove(ptoq);
 
-    t = ptoq->front;
-    while(t != NULL){
-    printf("%d\n", t->info);
-    t = t->next;
-  }
-
-  return 0;
-} 

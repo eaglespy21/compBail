@@ -1,0 +1,2 @@
+Implemented Stack as a linked list
+Used guards around basic linkedlist header to prevent already defined compiler errors
