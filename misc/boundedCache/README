@@ -1,0 +1,3 @@
+Bounded cache using a queue. 
+The last element is not returned though. 
+Lots of bugs I think, needs thorough testing. 
