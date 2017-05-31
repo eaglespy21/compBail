@@ -5,13 +5,13 @@
 #endif
 #include "circularQ.h"
 
-int empty(struct node *pq){
+int empty(NODEPTR *pq){
   return ((*pq == NULL) ? TRUE : FALSE);
 }
 
-int remove(struct node *pq){
+int remove(NODEPTR *pq){
   int x;
-  struct node* p;
+  NODEPTR p;
   if(empty(pq) == TRUE){
     printf("stack underflow\n");
     exit(1);
@@ -29,17 +29,19 @@ int remove(struct node *pq){
   return(x);
 }
 
-void insert(struct node *pq, int x){
-  struct node* p;
+void insert(NODEPTR *pq, int x){
+  NODEPTR p;
   p = getNode();
   p->info = x;
-  if(empty(*pq) == TRUE){
+  if(empty(pq) == TRUE){
     *pq = p;
+    printf("First node %d inserted\n", (*pq)->info);
   }
   else{
     p->next = (*pq) ->next;
   }
   (*pq) -> next = p;
   *pq = p;
+  printf("Inserted %d at the end of the list\n", (*pq)->info);
   return;
 }

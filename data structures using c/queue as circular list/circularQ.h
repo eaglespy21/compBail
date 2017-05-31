@@ -3,9 +3,9 @@ struct queue{
   struct node *q;
 };
 
-int empty(struct node *pq);
+int empty(NODEPTR *pq);
 
-void insert(struct node *pq, int x);
+void insert(NODEPTR *pq, int x);
 
-int remove(struct node * pq);
+int remove(NODEPTR * pq);
 

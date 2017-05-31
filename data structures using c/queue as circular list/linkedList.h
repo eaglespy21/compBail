@@ -5,6 +5,7 @@ struct node{
   int info;
   struct node* next;
 };
+typedef struct node *NODEPTR;
 
 node* getNode();
 void freeNode(node* p);
