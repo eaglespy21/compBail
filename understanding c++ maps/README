@@ -1,0 +1,7 @@
+Maps
+What is move constructor? 
+
+You cannot compare an iterator to null. 
+The closest thing you can do to check the validity of an iterator is to compare it to the container's end iterator.
+The only thing you can do with and unassigned iterator is assign a value to it.
+/* From - https://stackoverflow.com/questions/824157/how-to-check-whether-stl-iterator-points-at-anything */ 

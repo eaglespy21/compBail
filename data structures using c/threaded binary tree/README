@@ -1,0 +1,3 @@
+Threaded binary tree
+Provides an efficient way of traversal without stacking unstacking
+The right pointer of node with an empty right sub tree points to it's inorder successor. 

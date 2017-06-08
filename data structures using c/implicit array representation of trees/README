@@ -1,0 +1,7 @@
+Implicit Array representation of binary trees.
+For almost complete binary trees the nodes can be numbered from 1 to n so that the number assigned to the left son is twice that of the root
+and the right son is 1 more than twice the root. 
+The sequential representation will save storage space for trees that are almost complete, since it eliminates the need for left, right and father. 
+Linked representation allows for a more flexible use of a collection of nodes only limited by the available memory. 
+Inorder traversal is ascending order the tree is a binary tree
+

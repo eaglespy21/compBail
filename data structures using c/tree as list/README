@@ -1,0 +1,10 @@
+Binary tree to find duplicates in an array 
+/*As show in data structures using C by Aaron M. Tenenbaum et al. 
+Linked represention or dynamic node representation of binary tree used. 
+Father field is not used. 
+Inorder, preorder and postorder travesal using recursion. 
+Recursion for traversal is faster than non-recursive stacking/un stacking because - 
+1. there is no extra recursion like in fibonacci numbers 
+2. recrusion stack cannot be entirely eliminated like in factorial, therefore built in recursion is more efficient 
+3. No extraneous paramters and local variables. 
+
