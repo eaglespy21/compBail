@@ -1,0 +1,7 @@
+Prim's algorithm (main2.cpp) 
+Using map to represent vertice and key, adjacency matrix.  
+O(n^2) time complexity 
+Used gdb to backtrace and find segmentation faults.
+/*From here - https://stackoverflow.com/questions/2876357/determine-the-line-of-c-code-that-causes-a-segmentation-fault */
+Problems  - doesn't work for multiple test cases
+TODO - prim's algorithm using adjacency list to represent input graph. Time complexity is O(E log V) with binary heap

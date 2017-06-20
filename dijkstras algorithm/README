@@ -1,0 +1,12 @@
+Dijkstra's Algorithm 
+/*Help from Geeks for Geeks*/
+
+Different from prims in ways that it doesn't only calculate the minimum spanning tree but the shortest distance 
+to each vertex from the source vertex. 
+
+Source vertex is hardcoded to 0 
+Multiple test cases won't work 
+Time complexity is O(v^2). 
+If adjacency lists are used then time complexity can be reduced to O(E log V)
+
+The main time consumption is building the graph, since adjacency lists insertion is O(1), they are more efficient than arrays. 
